@@ -1,11 +1,8 @@
 import React from 'react';
-import Link from "next/link";
-import A from "../components/A";
-import Head from "next/head";
 import MainContainer from "../components/MainContainer";
 import {useDispatch, useSelector} from "react-redux";
 
-const Index = () => {
+const Main = () => {
     const dispatch = useDispatch();
     const cash = useSelector(state => state.cash);
 
@@ -29,4 +26,4 @@ const Index = () => {
     );
 };
 
-export default Index;
+export default Main;
